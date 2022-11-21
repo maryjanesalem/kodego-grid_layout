@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Based Layout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our contacts</h1>
+            <div class="addNumEmail">
+                <p>123 Kamagong St.</p>
+                <p>801212121-11</p>
+                <p>mail@mail.com</p>
+            </div>
+            
+        </header>
+        <main>
+            <p>Send us a message</p>
+            <form>
+                    <label for="name">Your name</label>
+                    <input type="text" name="Name" id="name">
+                    <label class="right skype" for="skype">Skype</label>
+                    <input class="right" type="text" name="Skype" id="skype">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="Email" id="email">
+                    <label class="right topic" for="topic">Topic</label>
+                    <input class="right" type="text" name="Topic" id="topic">
+                    <label for="message">Write your message</label>
+                    <textarea name="Message" id="message" cols="40" rows="8"></textarea>
+                <input type="submit" value="Submit">
+
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "header main" ;
+}
+
+header {
+    background-color: royalblue;
+    color: white;
+    grid-area: header;
+    padding: 30px;
+}
+
+main {
+    padding: 30px;
+    grid-area: main;
+}
+
+h1 {
+    font-size: medium;
+    grid-area: ourContact;
+}
+
+.addNumEmail {
+    grid-area: addNumEmail;
+    line-height: 0;
+}
+
+main p {
+    font-size: medium;
+    grid-area: sendMessage;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: left;
+}
+
+input {
+    grid-column: 1 / 2;
+    margin-bottom: 20px;
+}
+
+.right {
+    grid-column: 2 / 3;
+    display: block;
+}
+
+textarea {
+    grid-column: 1 / 3;
+    width: 100%;
+}
+input[type="submit"] {
+    grid-column: 1 / 3;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+label.skype {
+    grid-row: 1 / 2;
+}
+
+label.topic {
+    grid-row: 3 / 4;
+}
